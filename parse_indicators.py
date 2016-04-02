@@ -155,7 +155,7 @@ if __name__ == "__main__":
     with open("params1.txt","w+") as fl1, open("ugs1.txt","w+") as fl2:
 
         ms = monitoring_site("http://indicators.miccedu.ru/monitoring/inst.php?id=%s")
-        for i in range(1):
+        for i in range(10):
             pg = ms.get_page(i)
             logging.debug("university %s was opened" % i)
             if pg: 
